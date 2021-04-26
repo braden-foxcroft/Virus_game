@@ -60,3 +60,16 @@ Adobe Flash is a program that can be used to run online games.
 For a long time, it was a staple of internet culture. Lots of kids (myself included) grew up on free flash games.
 Unfortunately, Flash isn't being maintained, and is riddled with major security flaws.
 Modern browsers no longer have flash enabled by default, and flash is no longer supported by most major websites.
+
+
+DEBUG:
+Hold shift and press numbers to toggle debug modes. Numbers 0-7 all have an effect:
+1. Show only the graphical elements that have updated in the last second.
+2. Show the collision box around the player
+3. Show the infected tiles that are currently on the 'just-filled' list
+4. Show the enemy movement lines
+5. Show tile contents according to actual state (use with last level, or logic-bomb upgrade.)
+6. Make the worm move faster
+7. Show grid-lines.
+0. Reset all debug options
+
