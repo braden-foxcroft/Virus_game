@@ -1,0 +1,29 @@
+/* The CSS file
+Made by Braden Foxcroft
+[30090898]
+
+Enforces the desired formatting.
+ */
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: BLACK;
+}
+
+.flexBox {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+#can {
+	height: 768px;
+	width: 1024px;
+	padding: 0;
+	border: 1px Solid WHITE;
+}
