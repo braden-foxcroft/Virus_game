@@ -1342,7 +1342,7 @@ function toggleDebug(flagNum) {
 function resetDebugAll() {
 	for (ind in debugState) {
 		if (debugState[ind]) {
-			toggleDebug(ind+1);
+			toggleDebug(parseInt(ind)+1);
 		}
 	}
 }
