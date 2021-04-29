@@ -852,6 +852,7 @@ function wormStep() {
 				collisionResult = 3;
 				actOnCollisions();
 				currentBoard[newY][newX] = 8;
+				tileDraw(newX,newY);
 			} else if (currentBoard[newY][newX] == 2) {
 				collisionResult = 2;
 				actOnCollisions();
