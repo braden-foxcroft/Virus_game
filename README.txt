@@ -1,5 +1,5 @@
 To run the game:
-Open the page.html file in Google chrome (maybe it runs on other browsers too, who knows?)
+Open the 'index.html' file in Google chrome (maybe it runs on other browsers too, who knows?)
 
 Menu navigation:
 - Press left and right to select a level.
