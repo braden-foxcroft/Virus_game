@@ -321,6 +321,9 @@ function loadLevel(levelNum) {
 	currentLevelNum = levelNum;
 	bonuses[4] = 0;
 	victoryMeter = 0;
+	if (bonuses[1] || bonuses[2]) {
+		bonuses[0] = true;
+	}
 	if (levelNum == 1) {
 		level = level1;
 	}
@@ -1110,6 +1113,15 @@ function bonusText(cont, line) {
 	drawText(cont,"20px Arial","#000000",205,280 + 25 * line + downOff);
 }
 
+function bonusTextRed() {
+	drawText("Since bonus 1 is a prerequisite for 2 and 3, it will be enabled automatically.","20px Arial","#CC0000",205,280 + 80 + downOff);
+}
+
+function noBonusTextRed() {
+	con.fillStyle = "#000000";
+	con.fillRect(205,280 + 60 + downOff,700,25);
+}
+
 var downOff = 200;
 function drawBonusSelect() {
 	drawText("Bonuses:","30px Arial","#C0C0C0",445,175+downOff)
@@ -1148,6 +1160,11 @@ function drawBonusSelect() {
 			bonusText("You are now running in Adobe Flash.",0);
 			bonusText("The user has already turned off antivirus so they can run you.",1);
 			bonusText("Flash isn't properly sandboxed, so you can walk through walls!",2);
+		}
+		if (!bonuses[0] && (bonuses[1] || bonuses[2])) {
+			bonusTextRed();
+		} else {
+			noBonusTextRed();
 		}
 	}
 	
